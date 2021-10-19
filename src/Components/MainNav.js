@@ -1,11 +1,12 @@
 import React from "react";
-
+import best1 from "../images/Navbar/best_1.png";
 import styles from "../assets/css/MainNav.module.css";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Dropdown, Image } from "react-bootstrap";
 
 export default function MainNav() {
     return (
@@ -15,7 +16,7 @@ export default function MainNav() {
                     {/* ----------------------- logo----------------------------------- */}
                     <Navbar.Brand href="#home">
                         <a href="#sa">
-                            <img src="../images/Navbar/best1.png" />
+                            <Image width="50" height="50" src={best1} />
                         </a>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,6 +26,7 @@ export default function MainNav() {
                             <Nav.Link href="#features">বারাকা</Nav.Link>
                             {/* <Nav.Link href="#pricing">বিষয়সমূহ</Nav.Link> */}
                             {/* ----------------------- 1st Dropdown----------------------------------- */}
+                            
                             <NavDropdown
                                 title="বিষয়ভিত্তিক"
                                 id="collasible-nav-dropdown"
@@ -47,26 +49,54 @@ export default function MainNav() {
                                 <NavDropdown.Item href="#action/3.4">
                                     রাষ্ট্রীয়
                                 </NavDropdown.Item>
-
-                                <NavDropdown
+                                {/* <NavDropdown.Item > */}
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="none shadow-none w-100 rounded-0 text-start" id="dropdown-basic" border="none" className={styles.customDropDown}>
+                                    সমস্যা
+                                    </Dropdown.Toggle>
+                                    
+                                        <div className={styles.customDropDownItems}>
+                                            <Dropdown.Menu>
+                                            
+                                                <Dropdown.Item href="#/action-1">ব্যাক্তিগত সমস্যা</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">সামাজিক সমস্যা</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-3">এলাকাভিত্তিক সমস্যা</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </div>
+                                    </Dropdown>
+                                {/* <NavDropdown
                                     className={styles.customDropDown}
                                     title="সমস্যা "
                                     id="collasible-nav-dropdown"
                                 >
-                                    <div className={styles.customDropDownItems}>
-                                        <NavDropdown.Item href="#action/3.১">
+                                   
+                                        <NavDropdown.Item href="#action/3.1">
                                             ব্যাক্তিগত সমস্যা
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.১">
+                                        <NavDropdown.Item href="#action/3.1">
                                             সামাজিক সমস্যা
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.১">
+                                        <NavDropdown.Item href="#action/3.1">
                                             এলাকাভিত্তিক সমস্যা
                                         </NavDropdown.Item>
                                     </div>
-                                </NavDropdown>
-
-                                <NavDropdown
+                                </NavDropdown> */}
+                                {/* </NavDropdown.Item> */}
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="none shadow-none w-100 rounded-0 text-start" id="dropdown-basic" border="none" className={styles.customDropDown}>
+                                        সমাধান
+                                    </Dropdown.Toggle>
+                                    
+                                        <div className={styles.customDropDownItems}>
+                                            <Dropdown.Menu>
+                                            
+                                                <Dropdown.Item href="#/action-1">সাধারন</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">মধ্যম</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-3">সিরিয়াস</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </div>
+                                </Dropdown>
+                                {/* <NavDropdown
                                     // className={styles.customDropDown}
                                     title="সমাধান "
                                     id="collasible-nav-dropdown"
@@ -84,7 +114,7 @@ export default function MainNav() {
                                             সিরিয়াস
                                         </NavDropdown.Item>
                                     </div>
-                                </NavDropdown>
+                                </NavDropdown> */}
 
                                 <NavDropdown.Item href="#action/3.4">
                                     অন্যান্য

@@ -1,11 +1,21 @@
 .customDropDown {
-    position: relative;
+  position: relative;
+  margin-left: 1px;
+}
+
+.customDropDown:hover {
+  background-color: lightgrey;
 }
 .customDropDownItems {
-    position: absolute;
-    top: 2px;
-    left: 159px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    border-bottom: 1px solid lightgrey;
+  color: black;
+  position: absolute;
+  top: 2px;
+  left: 159px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.customDropDown:active {
+  border: none;
 }
