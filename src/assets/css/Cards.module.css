@@ -1,0 +1,125 @@
+.cardLinkDesign {
+    text-decoration: none;
+}
+.cardD {
+    /* margin-left: 30px; */
+    /* position: relative; */
+    /* margin-bottom: 30px; */
+    margin: 10px;
+}
+.cardD:hover {
+    box-shadow: 4px 4px 4px gray;
+}
+.authorName {
+    text-decoration: none !important;
+}
+.authorName:hover {
+    color: salmon;
+}
+.cardBody {
+    position: relative;
+}
+
+.bookRatings {
+    position: absolute;
+    top: 140px;
+}
+.bookTags {
+    position: absolute;
+    top: 175px;
+    /* top: 200px; */
+}
+.bookTag {
+    text-decoration: none;
+    background-color: gray;
+    color: beige;
+    border-radius: 4px;
+    margin-right: 3px;
+    padding: 4px;
+}
+
+.shortDetails {
+    position: absolute;
+    top: 700px;
+    /* left: 500px; */
+    /* left mention kore dilei 
+    shudhu ekta print hocche 
+    baki gula hocche na  */
+
+    /* left: 400px; */
+    z-index: 2;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.shortDetailsTopicName {
+    background-color: sandybrown;
+}
+.shortDetailsAuthor {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shortDetailsUserImage {
+    margin-left: 14px;
+    margin-top: -25px;
+}
+
+.freePaidTags {
+    position: absolute;
+    top: 105px;
+    /* top: 200px; */
+}
+.freePaidTag {
+    text-decoration: none;
+    background-color: green;
+    color: beige;
+    border-radius: 4px;
+    margin-right: 3px;
+    padding: 4px;
+}
+.shortDetailsClosebutton {
+    position: absolute;
+    border-radius: 50%;
+    top: 94px;
+    left: 275px;
+    border: none;
+}
+
+/* //////////////////// */
+.buttons {
+    position: absolute;
+    border-radius: 50%;
+    top: 165px;
+    left: 235px;
+    border: none;
+}
+
+.buttons:hover {
+    background-color: green;
+}
+
+.buttons2 {
+    position: absolute;
+    border-radius: 50%;
+    top: 165px;
+    left: 190px;
+    border: none;
+    background-color: rgb(14, 111, 223);
+}
+
+.buttons3 {
+    position: absolute;
+    border-radius: 50%;
+    top: 122px;
+    left: 235px;
+    border: none;
+    background-color: rgb(14, 111, 223);
+}
+
+.buttons4 {
+    position: absolute;
+    border-radius: 3px;
+    top: 350px;
+    left: 10px;
+    border: none;
+    background-color: rgb(14, 111, 223);
+}

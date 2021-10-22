@@ -1,0 +1,12 @@
+.mainErrorText {
+    line-height: 60px;
+    color: yellow;
+    margin-bottom: 12px;
+    font-size: 45px;
+}
+.mainError {
+    background-color: black;
+    height: 89px;
+    width: auto;
+    text-align: center;
+}

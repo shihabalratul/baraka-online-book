@@ -1,0 +1,50 @@
+.marquee {
+    color: navy;
+    background-color: #ddd8ba !important;
+    width: 100%;
+    height: auto;
+}
+.customDropDown {
+    position: relative;
+    margin-left: 1px;
+}
+
+.customDropDown:hover {
+    background-color: lightgrey;
+}
+.customDropDownItems {
+    color: black;
+    position: absolute;
+    top: 2px;
+    left: 159px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.customDropDown:active {
+    border: none;
+}
+
+.navbarImage {
+    width: 10%;
+}
+.navbarContent {
+    width: 60%;
+}
+
+.nlink {
+    color: #ffffff;
+    /* margin: 10px; */
+    border-radius: 4px;
+    transition: 0.4s;
+    margin-left: 5px !important;
+}
+
+.nlink:hover {
+    background: #7fffd4;
+    color: black !important;
+
+    /*ekhane ekta vul korsi but bepar na .. outline-offset er jaygay color hobe */
+    transform: scale(1.1); /* animation slightly bigger */
+}

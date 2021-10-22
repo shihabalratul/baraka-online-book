@@ -1,0 +1,68 @@
+/* Style the links inside the sidenav */
+.mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+
+    /* left: -60px; Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    /* width: 100px; Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+.mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    z-index: 2;
+}
+
+/* The about link: 20px from the top with a green background */
+.islamic {
+    top: 550px;
+    background-color: #04aa6d;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    left: -100px;
+}
+.islamicIcon {
+    padding-left: 15px;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+.political {
+    top: 610px;
+    background-color: #2196f3; /* Blue */
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    left: -120px;
+}
+.politicalIcon {
+    padding-left: 21px;
+}
+/* //////////////////////////////////////////////////////////////// */
+.national {
+    top: 670px;
+    background-color: #f44336; /* Red */
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    left: -100px;
+}
+.nationalIcon {
+    padding-left: 35px;
+}
+/* //////////////////////////////////////////////////////////////// */
+.international {
+    top: 730px;
+    background-color: #555; /* Light Black */
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    left: -130px;
+}
+.internationalIcon {
+    padding-left: 20px;
+}
