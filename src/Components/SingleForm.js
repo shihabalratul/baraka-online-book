@@ -9,23 +9,19 @@ export default function SingleForm() {
         searchInput.current.focus();
     }
     return (
-        <div>
-            <div className={styles.form}>
-                <Form>
-                    <div>
-                        <Form.Group controlId="formBasicEmail">
-                            {/* <Form.Label>Email address</Form.Label> */}
+        <div className="w-100 d-flex">
+           
+                <Form className={styles.form}>
+                    {/* /Removed form group as it is unnecessary when using single form item./ */}
+                        
                             <Form.Control
+                                className={styles.searchBar}
                                 ref={searchInput}
-                                type="text"
+                                type="search"
                                 placeholder="আপনার পছন্দের বইটি খুঁজুন এখানে..."
                             />
-                            {/* <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text> */}
-                        </Form.Group>
-                    </div>
-                    <div>
+                          
+                    
                         <Button
                             className={styles.button}
                             variant="primary"
@@ -36,7 +32,7 @@ export default function SingleForm() {
                             </span>
                             Search
                         </Button>
-                    </div>
+                    
                 </Form>
                 <Button
                     onClick={handleFocus}
@@ -48,6 +44,6 @@ export default function SingleForm() {
                     </span>
                 </Button>
             </div>
-        </div>
+        
     );
 }
